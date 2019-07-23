@@ -89,3 +89,6 @@
   background-color: white;
   align-self: flex-start;
 }
+#template {
+  display: none;
+}
