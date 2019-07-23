@@ -7,7 +7,7 @@
   float: left;
 
 }
-#wrapper {
+.wrapper {
   margin-left: 10%;
   width: 80vw;
   height: 100vh;
@@ -18,28 +18,47 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
-#section_two {
+.section_two {
   height: calc(100% - 100px);
   width: 100%;
   /* background: pink; */
 }
-#section_three {
+.section_three {
   height: 100px;
   width: 80%;
   background: #f3eeea;
   margin-left: 20%;
 }
-#section_up {
+.section_up {
   background: #eaeaea;
   height: 100px;
 }
-#col_left {
+.col_left {
   width: 20%;
   height: 100vh;
   background: #ffffff;
 }
-#col_right {
+.col_right {
   width: 80%;
   height: 100%;
   background-image: url("img/sfondo2.png");
+}
+.up_left {
+  display: flex;
+  height: 10%;
+  justify-content: space-between;
+}
+.righticon {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+}
+.lefticon > img {
+  width: 50px;
+  height: 50px;
+}
+.righticon > img {
+  width: 30px;
+  height: 30px;
 }
