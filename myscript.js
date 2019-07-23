@@ -15,5 +15,14 @@ function invioMsg () {
   templateTemp.text(invioUtente);
   $(".msg_container").append(templateTemp);
   console.log(templateTemp);
+
+  setTimeout(function() {
+
+    var templateTemp2 = $("#template2 .bianchi").clone();
+    templateTemp2.text("ok");
+    $(".msg_container").append(templateTemp2);
+  }, 1000);
+
+  invioUtente = $("#myText").val("");
 }
 });
