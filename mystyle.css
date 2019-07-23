@@ -7,6 +7,11 @@
   float: left;
 
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .wrapper {
   margin-left: 10%;
   width: 80vw;
@@ -71,4 +76,16 @@
 .contact_left > img {
   width: 50px;
   height: 50px;
+}
+.msg_container {
+  display: flex;
+  flex-direction: column;
+}
+.verdi {
+  background-color: lightgreen;
+  align-self: flex-end;
+}
+.bianchi {
+  background-color: white;
+  align-self: flex-start;
 }
