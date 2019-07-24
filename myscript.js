@@ -25,4 +25,20 @@ function invioMsg () {
 
   invioUtente = $("#myText").val("");
 }
+  $("#search-text").keyup(function() {
+
+    var ricerca = $(this).val();
+    console.log(ricerca);
+
+    $(".contact_left").each(function() {
+      $(this).show();
+
+      var contact = $(this).find("b").text();
+      console.log(contact);
+      if (!contact.includes(ricerca)) {
+        $(this).hide();
+      }
+    })
+
+  })
 });
