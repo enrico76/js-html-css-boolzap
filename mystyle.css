@@ -48,6 +48,11 @@
   height: 100vh;
   background: #ffffff;
 }
+.contatti {
+ overflow-y: scroll;
+ max-height: 80%;
+}
+
 .col_right {
   width: 80%;
   height: 100%;
@@ -92,10 +97,6 @@
   background-color: white;
   align-self: flex-start;
 }
-#template {
+.template {
   display: none;
-}
-#template2 {
-  display: none;
-
 }
