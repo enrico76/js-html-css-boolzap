@@ -25,6 +25,7 @@ function invioMsg () {
 
   invioUtente = $("#myText").val("");
 }
+// funzione di ricerca contatti
   $("#search-text").keyup(function() {
 
     var ricerca = $(this).val();
