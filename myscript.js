@@ -42,4 +42,9 @@ function invioMsg () {
     })
 
   })
+  $(".contact_left").click(function() {
+    var contactsel = $(this).data("number");
+    console.log(contactsel);
+  })
+
 });
