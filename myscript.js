@@ -1,4 +1,4 @@
-console.log("initial myscript");
+console.log("initial script");
 
 $( document ).ready(function(){
 $("#iconSend").click(invioMsg);
@@ -11,14 +11,14 @@ function invioMsg () {
   var invioUtente = $("#myText").val();
   console.log(invioUtente);
 
-  var templateTemp = $("#template .verdi").clone();
+  var templateTemp = $(".template .verdi").clone();
   templateTemp.text(invioUtente);
   $(".msg_container").append(templateTemp);
   console.log(templateTemp);
 
   setTimeout(function() {
 
-    var templateTemp2 = $("#template2 .bianchi").clone();
+    var templateTemp2 = $(".template .bianchi").clone();
     templateTemp2.text("ok");
     $(".msg_container").append(templateTemp2);
   }, 1000);

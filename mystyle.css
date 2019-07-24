@@ -23,6 +23,9 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
+.link-container {
+  background-color: #8edafc;
+}
 .section_two {
   height: calc(100% - 100px);
   width: 100%;
@@ -91,4 +94,8 @@
 }
 #template {
   display: none;
+}
+#template2 {
+  display: none;
+
 }
