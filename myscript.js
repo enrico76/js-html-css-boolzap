@@ -46,12 +46,18 @@ function invioMsg () {
     var contactsel = $(this).find("b").text();
     $(".section_up .namechat").text(contactsel);
     var imgcontact = $(this).find("img").attr("src");
-    $(".section_up imgcontact").not("#batman").attr("src" , imgcontact);
+    $(".section_up img").not("#batman").attr("src" , imgcontact);
     var chat = $(this).attr("chatnumber");
     console.log(chat);
-  })
-  // var chatCont = {};
 
+    $(".msg_container").removeClass("active");
+    $('.msg_container[chat = "'+ chat +'"]').addClass("active");
+  })
+
+    // $(".msg_container").on("click" , ".verdi" , function() {
+    //   $(this).children
+    //
+    // })
 
 
 });
